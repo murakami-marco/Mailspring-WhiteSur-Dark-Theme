@@ -1,0 +1,1 @@
+# Mailspring-WhiteSur-Dark-Theme

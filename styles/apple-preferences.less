@@ -1,0 +1,60 @@
+@import 'ui-variables';
+
+.preferences-sidebar,
+.preferences-content {
+  background: @background;
+}
+
+.preferences-wrap .preferences-content > .scroll-region-content {
+  padding-bottom: 100px;
+}
+
+.preferences-wrap .preferences-content {
+  flex: 8;
+  background-color: @sidebar;
+}
+
+.preferences-wrap .container-preference-tabs .preferences-tabs {
+  background-color: @sidebar;
+}
+
+.preferences-wrap .container-preference-tabs .preferences-tabs .item.active {
+  background: @background;
+  color: white;
+}
+
+.container-identity .identity-content-box,
+.preferences-wrap,
+.preferences-wrap p,
+.preferences-wrap h6,
+.preferences-wrap .container-preference-tabs .preferences-tabs .item .name,
+.preferences-wrap .container-keymaps .shortcut .values,
+.preferences-wrap .container-keymaps .col-left,
+.preferences-signatures-container .signature-wrap .section.information .field label,
+.role-section .col-left,
+.sheet-toolbar .item-back img.content-mask {
+  color: lightgrey;
+}
+
+.preferences-wrap .container-accounts .accounts-content .account-list .account {
+  border-bottom: none !important;
+}
+
+.preferences-wrap .container-accounts .accounts-content .account-details,
+.preferences-wrap .container-accounts .accounts-content .account-details .items-wrapper,
+.preferences-wrap .container-accounts .accounts-content .account-list .items-wrapper,
+.preferences-signatures-container .signature-wrap .section {
+  background-color: @background;
+  border: 1px solid @sidebar;
+}
+
+.preferences-signatures-container .signature-wrap .signature-template-picker {
+  background-color: @background;
+}
+
+.preferences-signatures-container .signature-wrap .account-picker {
+  display: inline-block;
+  color: lightgray;
+  margin-left: 12px;
+  margin-right: 2px;
+}

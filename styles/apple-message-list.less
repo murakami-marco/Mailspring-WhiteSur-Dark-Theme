@@ -1,0 +1,188 @@
+@import 'ui-variables';
+
+#message-list {
+  background: @background;
+}
+
+#message-list .message-subject {
+  color: @sidebar-text;
+}
+
+.toolbar-MessageListSidebar {
+    width: auto !important;
+    left: auto !important;
+    right: 0;
+}
+
+.sheet-toolbar .message-toolbar-items {
+    position: absolute !important;
+    right: 112px;
+    z-index: 2;
+}
+
+// Make toolbars match panels
+.column-MessageList,
+.toolbar-MessageList,
+.column-MessageListSidebar,
+.toolbar-MessageListSidebar {
+  height: 100%;
+  background: @background;
+  border-left: 1px solid @border-color;
+}
+
+// Message List top and bottom spacing
+#message-list .messages-wrap .scroll-region-content-inner {
+  padding: 0px;
+  padding-bottom: 40vh;
+  border-left: 0px solid @border-color;
+}
+
+// Reset padding
+#message-list .message-header,
+#message-list .message-item-wrap.collapsed .message-item-white-wrap,
+#message-list .message-item-wrap.collapsed .message-item-area {
+  padding: 0;
+}
+
+// Make padding uniform
+#message-list .message-item-area,
+#message-list .footer-reply-area-wrap .footer-reply-area {
+  padding: 20px !important;
+}
+
+#message-list .message-item-wrap.collapsed .message-item-area .collapsed-attachment {
+  padding: 10px;
+}
+
+// Adjusting position of thread participants toggle
+#message-list .header-toggle-control {
+  top: 6px !important;
+  left: -11px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+// Reducing size and overriding invalid -webkit-mask-repeat- property
+#message-list .header-toggle-control img {
+  zoom: 0.35 !important;
+  -webkit-mask-repeat: no-repeat !important;
+}
+
+.message-participants.to-participants .collapsed-participants,
+.message-participants .expanded-participants .participant-type {
+  margin-top: 0;
+}
+
+.message-participants .from-label,
+.message-participants .to-label,
+.message-participants .reply-to-label,
+.message-participants .cc-label,
+.message-participants .bcc-label {
+  margin-right: 6px;
+}
+
+#message-list .message-item-wrap .message-item-white-wrap,
+#message-list .minified-bundle .msg-line,
+#message-list .minified-bundle .num-messages,
+#message-list .footer-reply-area-wrap {
+  box-shadow: none;
+  border: none;
+  border-radius: @border-radius;
+}
+
+#message-list .minified-bundle + .message-item-wrap,
+#message-list .message-item-wrap.collapsed + .minified-bundle,
+#message-list .minified-bundle .num-messages,
+#message-list .minified-bundle .msg-lines {
+  margin-top: 0;
+}
+
+#message-list .minified-bundle .msg-lines {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+#message-list .minified-bundle .msg-line {
+  border-radius: @border-radius @border-radius 0 0;
+  position: relative;
+  border-top: 1px solid gray;
+  box-shadow: @accent 0px 3px 10px 0px;
+}
+
+// Collapsed Messages Pill Label
+#message-list .minified-bundle .num-messages {
+  padding: 3px;
+  background: gray;
+  color: white;
+}
+
+// remove margin for last message before reply
+#message-list .message-item-wrap.before-reply-area {
+  margin-bottom: 0;
+}
+
+#message-list .message-item-area .message-iframe-container {
+  border-top: 1px solid gray;
+}
+
+#message-list .message-item-wrap {
+  box-shadow: @accent 0px 3px 10px 0px;
+  margin: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 12px !important;
+  padding-bottom: 0px;
+  border: 3px solid @accent;
+}
+
+body.platform-win32 #message-list .message-item-wrap .message-item-white-wrap {
+  border-radius: @border-radius;
+}
+
+#message-list {
+  background: @background;
+}
+
+body.platform-win32 .button-dropdown .primary-item {
+  left: 8px;
+}
+
+#message-list .footer-reply-area-wrap {
+  border-top: none;
+  box-shadow: @accent 0px 3px 10px 0px;
+  margin: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: @border-radius !important;
+  border: 3px solid @accent;
+}
+#message-list .message-subject-wrap {
+  margin: 10px auto 5px auto;
+}
+
+.thread-list-narrow .snippet-and-labels {
+  margin-right: 0px;
+}
+
+#message-list .message-item-area .message-iframe-container {
+  margin-top: 6px;
+
+}
+
+#message-list .message-item-area iframe {
+  margin-top: 8px;
+}
+
+#message-list .message-header .message-actions-wrap {
+  width: 58px;
+}
+
+body.platform-win32 .button-dropdown .primary-item:hover,
+body.platform-win32 .button-dropdown .secondary-picker:hover {
+  background: @background;
+}
+
+#message-list > div.messages-wrap.ready.scroll-region > div.scroll-region-content > div > div.message-item-wrap.before-reply-area > div > div {
+  padding-bottom: 25px !important;
+}

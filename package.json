@@ -1,0 +1,11 @@
+{
+  "name": "whitesur-dark-variant",
+  "displayName": "Whitesur Dark Variant",
+  "theme": "ui",
+  "version": "1",
+  "description": "",
+  "license": "",
+  "engines": {
+    "mailspring": "*"
+  }
+}
